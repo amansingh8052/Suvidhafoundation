@@ -285,6 +285,10 @@ button:active {
 
 /* Responsive table: Make the table scrollable on smaller screens */
 @media (max-width: 768px) {
+  .card-heading {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+  }
   .table {
     display: block;
     overflow-x: auto;

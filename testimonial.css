@@ -87,14 +87,16 @@
     justify-content: center;
     background-color: var(--highlight);
     font-weight: 700;
-}
-.more-reviews p {
-    text-decoration: none;
-    color: var(--primary-color);
     font-size: 18px;
+    transition:all 0.3s ease;
 }
-.more-reviews:hover {
+.moreReviewPara {
+    color: var(--primary-color);
+    transition:all 0.3s ease;
+}
+.more-reviews:hover .moreReviewPara{
     text-decoration: 2px solid underline var(--primary-color);
+    font-size: 20px;
 }
 .moreCoverContent {
     position: absolute;
