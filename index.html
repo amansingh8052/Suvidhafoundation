@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suvidha Foundation</title>
+    <link href="images/favicon.png" rel="icon" />
+    <!-- swipper css -->
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <link href="images/favicon.png" rel="icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="testimonial.css" />
+  </head>
+  <body>
+    <button class="button" id="scrollToTopBtn">
+      <svg class="svgIcon" viewBox="0 0 384 512">
+        <path
+          d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+        ></path>
+      </svg>
+    </button>
+    <div id="header"></div>
+    <section class="hero">
+      <!-- Container to hold video and close button -->
+      <div id="videoContainer">
+        <div class="videoInner">
+          <!-- Close button -->
+          <button id="closeButton" onclick="closeVideo()">X</button>
+
+          <!-- Video element -->
+          <video id="myVideo" width="100%" height="100%" controls>
+            <source src="images/Glimpse.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <div class="slideshow-container">
+        <div class="slides fade">
+          <img src="images/Award_1.jpg" alt="" />
+        </div>
+        <div class="slides fade">
+          <img src="images/Award_2.jpg" alt="" />
+        </div>
+        <div class="slides fade">
+          <img src="images/ClimateAction.jpg" alt="" />
+        </div>
+        <div class="slides fade">
+          <img src="images/TreePlant.jpg" alt="" />
+          <div class="content">
+            <h1>Cultivating a Greener Planet with Suvidha</h1>
+            <div class="donateNowbtn">
+              <a href="donate.html" class="btn herobtn">Donate Now</a>
+              <a href="#" class="btn video" onclick="showAndPlayVideo(event)"
+                >Watch video</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="slides fade">
+          <img src="images/SocialWork.jpg" alt="" />
+          <div class="content">
+            <h1>Transforming Lives with Love and Care</h1>
+            <div class="donateNowbtn">
+              <a href="donate.html" class="btn herobtn">Donate Now</a>
+              <a href="#" class="btn video" onclick="showAndPlayVideo(event)"
+                >Watch video</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="slides fade">
+          <img src="images/Suvidha-3.jpg" alt="" />
+          <div class="content">
+            <h1>Get Your Donations Tax Exempted</h1>
+            <div class="donateNowbtn">
+              <a href="donate.html" class="btn herobtn">Donate Now</a>
+              <a href="#" class="btn video" onclick="showAndPlayVideo(event)"
+                >Watch video</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="slides fade">
+          <img src="images/Suvidha_Internships.jpg" alt="" />
+        </div>
+        <div class="slides fade">
+          <img src="images/Suvidha-1.jpg" alt="" />
+          <div class="content">
+            <h1>Bringing smiles to millions</h1>
+            <div class="donateNowbtn">
+              <a href="donate.html" class="btn herobtn">Donate Now</a>
+              <a href="#" class="btn video" onclick="showAndPlayVideo(event)"
+                >Watch video</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="slides fade">
+          <img src="images/Suvidha-4.jpg" alt="" />
+          <div class="content">
+            <h1>77th Independence Day Celebration</h1>
+            <div class="donateNowbtn">
+              <a href="donate.html" class="btn herobtn">Donate Now</a>
+              <a href="#" class="btn video" onclick="showAndPlayVideo(event)"
+                >Watch video</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </section>
+    <section class="colab">
+      <img src="images/collab-3.jpg" alt="" />
+      <img src="images/collab-4.png" alt="" />
+      <img src="images/collab-5.png" alt="" />
+    </section>
+    <section class="aboutUs">
+      <div class="imgContainer">
+        <img class="aboutImg" src="images/about.jpg" alt="" />
+        <img class="femalehead" src="images/femalehead.jpg" alt="" />
+      </div>
+      <div class="aboutContent">
+        <h3>Learn About Us</h3>
+        <h1>Suvidha Foundation (Suvidha Mahila Mandal)</h1>
+        <div class="tab-container">
+          <button class="tab-link activeTab" onclick="openSlide(1, this)">
+            About
+          </button>
+          <button class="tab-link" onclick="openSlide(2, this)">Mission</button>
+          <button class="tab-link" onclick="openSlide(3, this)">Vision</button>
+        </div>
+        <div class="tabshow-container">
+          <div class="tab" id="tab1">
+            <p>
+              Suvidha Mahila Mandal, established on September 8, 1995, is a
+              non-profit organization working to impart education among the
+              financially challenged sections to help them realize parity in
+              education and strength of little minds in building a promising
+              future. The organization has provisions of student internships,
+              student mentorship, and the scope to volunteer. Through these
+              programs, the organization aims to achieve the vision of imparting
+              innovative education that stays with the students forever and
+              equips them for the unforeseen future.
+            </p>
+          </div>
+          <div class="tab" id="tab2">
+            <ul>
+              <li>
+                To Inspire Students, help them Innovate and let them Integrate
+                to build the next generation humankind.
+              </li>
+              <li>
+                To Run Food Donation And Awareness Campaign In Rural Region.
+              </li>
+            </ul>
+          </div>
+          <div class="tab" id="tab3">
+            <ul>
+              <li>
+                To build Next Generation Entrepreneur, by providing them a
+                Skill-Based Education.
+              </li>
+              <li>
+                To Provide Internship, Training And Workshops and Quality
+                Education All Over The World..
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="whatWedo">
+      <h3 class="heading">What We Do</h3>
+      <h1>Causes for a Sustainable Future</h1>
+      <div class="cardWrapper">
+        <div class="card card1">
+          <div class="cardIcon"><img src="icons/food.png" alt="" /></div>
+          <h2>Healthy Food</h2>
+          <p>
+            By focusing on healthy food donations, our NGO aims to improve the
+            well-being and quality of life for individuals and communities in
+            need.
+          </p>
+        </div>
+
+        <div class="card card2">
+          <div class="cardIcon"><img src="icons/awareness.png" alt="" /></div>
+          <h2>Social Awareness</h2>
+          <p>
+            We provide resources, conduct awareness campaigns, and facilitate
+            access to hygiene facilities, aiming to create a healthier
+            environment and prevent the spread of diseases.
+          </p>
+        </div>
+        <div class="card card3">
+          <div class="cardIcon"><img src="icons/tree.png" alt="" /></div>
+          <h2>Tree Plantation</h2>
+          <p>
+            Through community engagement and active participation, we
+            successfully planted thousands of trees, fostering a greener and
+            healthier ecosystem for future generations.
+          </p>
+        </div>
+        <div class="card card4">
+          <div class="cardIcon"><img src="icons/health.png" alt="" /></div>
+          <h2>Health Care</h2>
+          <p>
+            We believe that access to healthcare is a fundamental right, and we
+            work tirelessly to ensure that healthcare services are accessible,
+            affordable, and of high quality for those in need.
+          </p>
+        </div>
+        <div class="card card5">
+          <div class="cardIcon"><img src="icons/edu.png" alt="" /></div>
+          <h2>Primary Education</h2>
+          <p>
+            By collaborating with local communities and educators, we aim to
+            empower children with the knowledge and skills they need for a
+            brighter future.
+          </p>
+        </div>
+        <div class="card card6">
+          <div class="cardIcon"><img src="icons/social.png" alt="" /></div>
+          <h2>Social Care</h2>
+          <p>
+            Our programs encompass a range of support services, including
+            counseling, vocational training, and advocacy, with the goal of
+            empowering individuals
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="stats">
+      <div class="statsCover">
+        <div class="statsItem">
+          <img src="icons/country.png" alt="" />
+          <h1 class="count">15+</h1>
+          <span class="statsName">Countries</span>
+        </div>
+
+        <div class="statsItem">
+          <img src="icons/Volunteers.png" alt="" />
+          <h1 class="count">3 Lakhs +</h1>
+          <span class="statsName">Volunteers</span>
+        </div>
+
+        <div class="statsItem">
+          <img src="icons/internship.png" alt="" />
+          <h1 class="count">1 Crore +</h1>
+          <span class="statsName">Internship Goal</span>
+        </div>
+
+        <div class="statsItem">
+          <img src="icons/holding-plant.png" alt="" />
+          <h1 class="count">54 Lakhs +</h1>
+          <span class="statsName">Trees Planted</span>
+        </div>
+      </div>
+    </section>
+    <section class="events">
+      <h3 class="heading">Suvidha Events</h3>
+      <h1>Our Charity Events: Celebrating Our Impact Together</h1>
+      <div class="eventCardWrapper">
+        <div class="eventCard">
+          <div class="eventimgContainer">
+            <img src="images/Tree-Plantation.jpg" alt="Tree-Plantation" />
+          </div>
+          <h2 class="eventCardHeading">Tree Plantation</h2>
+          <p>
+            Join us in nurturing the Earth's embrace, one tree at a time.
+            Together, let's create a greener tomorrow and breathe life into our
+            planet.
+          </p>
+        </div>
+
+        <div class="eventCard">
+          <div class="eventimgContainer">
+            <img src="images/Fundraising.jpg" alt="Tree-Plantation" />
+          </div>
+          <h2 class="eventCardHeading">Tree Plantation</h2>
+          <p>
+            Join us in nurturing the Earth's embrace, one tree at a time.
+            Together, let's create a greener tomorrow and breathe life into our
+            planet.
+          </p>
+        </div>
+      </div>
+      <div class="navigateToEvents">
+        <a href="events.html" class="btn">More Events</a>
+      </div>
+    </section>
+    <section class="team">
+      <h3 class="heading">Meet Our Team</h3>
+      <h1>Guys behind our charity activities</h1>
+      <div class="teamWrapper">
+        <div class="teamMember">
+          <div class="linkedIn">
+            <a href="https://www.linkedin.com/in/shobha-motghare-0a6a57238/"
+              ><img src="icons/linkedin.png" alt=""
+            /></a>
+          </div>
+          <div class="memberimgWrapper">
+            <img class="memberimg" src="images/Shobha_Motghare.jpeg" alt="" />
+          </div>
+          <h3 class="name">Shobha Motghare</h3>
+          <span class="post">Secretary</span>
+        </div>
+
+        <div class="teamMember">
+          <div class="linkedIn">
+            <a href="https://www.linkedin.com/in/payal-badhe-531756aa/"
+              ><img src="icons/linkedin.png" alt=""
+            /></a>
+          </div>
+          <div class="memberimgWrapper">
+            <img class="memberimg" src="images/Payal_Badhe.jpg" alt="" />
+          </div>
+          <h3 class="name">Payal Badhe</h3>
+          <span class="post">President</span>
+        </div>
+
+        <div class="teamMember">
+          <div class="memberimgWrapper">
+            <img class="memberimg" src="images/Bharti_Shendre.jpg" alt="" />
+          </div>
+          <h3 class="name">Bharti Shendre</h3>
+          <span class="post">Treasurer</span>
+        </div>
+
+        <div class="teamMember">
+          <div class="memberimgWrapper">
+            <img class="memberimg" src="images/Nilima_Kalambe.jpg" alt="" />
+          </div>
+          <h3 class="name">Nilima Kalambe</h3>
+          <span class="post">Advisor</span>
+        </div>
+      </div>
+    </section>
+    <section class="internship">
+      <div class="internshipContent">
+        <h1>Apply For Internship and Mentorship Programs</h1>
+        <h3>
+          Seize the opportunity to gain invaluable experience and jumpstart your
+          career with an internship that propels you towards success.
+        </h3>
+        <p>
+          The Suvidha Foundation Internship Program is a unique opportunity for
+          students and recent graduates to gain experience and contribute to the
+          work of Suvidha Foundation. Along with undertaking tasks related to
+          their specific skills, we encourage interns to develop a reputable
+          professional portfolio.
+        </p>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSe4vDnye2muE9yynJek6Swvamie2Idbu-LWAhQa0oMus5KJDg/viewform"
+          class="btn applyHere"
+          >Apply Here</a
+        >
+      </div>
+    </section>
+    <!-- Testimonials Section -->
+    <!-- <div id="reviews"></div> -->
+    <section id="testimonials" class="testimonials">
+      <h2 class="heading">Testimonial</h2>
+      <h1>What people are talking about our charity activities</h1>
+      <div class="review-slide-container">
+        <div class="swiper review-slide-content">
+          <div class="review-card-wrapper swiper-wrapper">
+            <div class="review-card swiper-slide">
+              <div class="review-image-content">
+                <span class="review-overlay"></span>
+
+                <div class="review-card-image">
+                  <img
+                    src="reviewimg/2.jpg"
+                    alt=""
+                    class="review-card-img"
+                  />
+                </div>
+              </div>
+              <div class="review-card-content">
+                <h2 class="review-name">Samrudhi Nawale</h2>
+                <p class="review-description">
+                  The experience here at Suvidha Foundation was wonderful. I learnt a lot. It was worth it.
+                </p>
+              </div>
+            </div>
+
+            <div class="review-card swiper-slide">
+              <div class="review-image-content">
+                <span class="review-overlay"></span>
+
+                <div class="review-card-image">
+                  <img
+                    src="reviewimg/6.jpg"
+                    alt=""
+                    class="review-card-img"
+                  />
+                </div>
+              </div>
+              <div class="review-card-content">
+                <h2 class="review-name">Ananya Tripathi</h2>
+                <p class="review-description">
+                  Regular meetings really helped in systematic learning as well as working.
+                </p>
+              </div>
+            </div>
+
+            <div class="review-card swiper-slide">
+              <div class="review-image-content">
+                <span class="review-overlay"></span>
+
+                <div class="review-card-image">
+                  <img
+                    src="reviewimg/8.jpg"
+                    alt=""
+                    class="review-card-img"
+                  />
+                </div>
+              </div>
+              <div class="review-card-content">
+                <h2 class="review-name">Sanjana Tunk</h2>
+                <p class="review-description">
+                  It was entirely a new experience and a gained alot from it.
+                </p>
+              </div>
+            </div>
+
+            <div class="review-card swiper-slide">
+              <div class="review-image-content">
+                <span class="review-overlay"></span>
+
+                <div class="review-card-image">
+                  <img
+                    src="reviewimg/12.jpg"
+                    alt=""
+                    class="review-card-img"
+                  />
+                </div>
+              </div>
+              <div class="review-card-content">
+                <h2 class="review-name">Manya Sahni</h2>
+                <p class="review-description">
+                  Thank you for giving the opportunity. Did this intership which was a bit different and unique from others
+                </p>
+              </div>
+            </div>
+
+            <div class="review-card swiper-slide">
+              <div class="review-image-content">
+                <span class="review-overlay"></span>
+
+                <div class="review-card-image">
+                  <img
+                    src="reviewimg/1.jpg"
+                    alt=""
+                    class="review-card-img"
+                  />
+                </div>
+              </div>
+              <div class="review-card-content">
+                <h2 class="review-name">Divina Malfoy</h2>
+                <p class="review-description">
+                  It was great experience to work in suvidha foundation, team work is very good. They conduct daily meetings to guide how to work,which they make our work more easy. So, overall it's amazing organization to learn.
+                </p>
+              </div>
+            </div>
+
+            <div class="review-card swiper-slide">
+              <div class="review-image-content">
+                <span class="review-overlay"></span>
+
+                <div class="review-card-image">
+                  <img
+                    src="reviewimg/5.jpg"
+                    alt=""
+                    class="review-card-img"
+                  />
+                </div>
+              </div>
+              <div class="review-card-content">
+                <h2 class="review-name">Aheri Ghosh</h2>
+                <p class="review-description">
+                  I'm glad to have worked with the Suvidha Foundation because I am passionate about their message and what they do
+
+                </p>
+              </div>
+            </div>
+
+            <div class="review-card swiper-slide">
+              <div class="review-image-content">
+                <span class="review-overlay"></span>
+
+                <div class="review-card-image">
+                  <img
+                    src="reviewimg/9.jpg"
+                    alt=""
+                    class="review-card-img"
+                  />
+                </div>
+              </div>
+              <div class="review-card-content">
+                <h2 class="review-name">Lekhashree H J</h2>
+                <p class="review-description">
+                  It was a great experience working with your NGO. I  learned to connect with the society and helped the underprivileged section of the society.
+                </p>
+              </div>
+            </div>
+
+            <div class="review-card swiper-slide">
+              <div class="review-image-content">
+                <span class="review-overlay"></span>
+
+                <div class="review-card-image">
+                  <img
+                    src="reviewimg/11.jpg"
+                    alt=""
+                    class="review-card-img"
+                  />
+                </div>
+              </div>
+              <div class="review-card-content">
+                <h2 class="review-name">Khushi Jain</h2>
+                <p class="review-description">
+                  Had great learning. Fruitful experience. 
+                </p>
+              </div>
+            </div>
+
+            <div class="review-card swiper-slide">
+              <div class="review-image-content">
+                <span class="review-overlay"></span>
+
+                <div class="review-card-image">
+                  <img
+                    src="reviewimg/2.jpg"
+                    alt=""
+                    class="review-card-img"
+                  />
+                </div>
+              </div>
+              <div class="review-card-content">
+                <h2 class="review-name">Samrudhi Nawale</h2>
+                <p class="review-description">
+                  The experience here at Suvidha Foundation was wonderful. I learnt a lot. It was worth it.
+                </p>
+              </div>
+            </div>
+
+            <div class="review-card swiper-slide">
+              <div class="review-image-content">
+                <span class="review-overlay"></span>
+
+                <div class="review-card-image">
+                  <img
+                    src="reviewimg/6.jpg"
+                    alt=""
+                    class="review-card-img"
+                  />
+                </div>
+              </div>
+              <div class="review-card-content">
+                <h2 class="review-name">Ananya Tripathi</h2>
+                <p class="review-description">
+                  Regular meetings really helped in systematic learning as well as working.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="review-card swiper-slide">
+              <div class="review-image-content">
+                <span class="review-overlay"></span>
+
+                <div class="review-card-image">
+                  <img
+                    src="reviewimg/12.jpg"
+                    alt=""
+                    class="review-card-img"
+                  />
+                </div>
+              </div>
+              <div class="review-card-content">
+                <h2 class="review-name">Manya Sahni</h2>
+                <p class="review-description">
+                  Thank you for giving the opportunity. Did this intership which was a bit different and unique from others
+                </p>
+              </div>
+            </div>
+
+            
+              <div class="more-reviews review-card swiper-slide">
+                <a class="moreCover" href="https://drive.google.com/drive/u/1/folders/1lCc5YL2t6eFN3nlk9mgseCXCg7kOdty8">
+                <div class="moreCoverContent review-card-content">
+                  <p>More Reviews</p>
+                </div>
+              </a>
+              </div>
+            
+
+          </div>
+        </div>
+        <div class="swiper-pagination pagination"></div>
+      </div>
+    </section>
+
+
+    <div id="footer"></div>
+    <script src="swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+
+.privacyHeader {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(images/page-header.jpg);
+    font-size: clamp(24px,3vw,40px);
+    color: var(--highlight);
+    text-decoration: 4px solid underline var(--highlight);
+    text-underline-offset: 5px;
+    background-attachment: fixed;
+}
+.privacyHeader h1 {
+    position: fixed;
+}
+.privacyWrapper {
+    width: 100vw;
+    height: max-content;
+    background-color: var(--primary-color);
+    color: var(--color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5vw;
+    z-index: 5;
+    position: relative;
+}
+.privacyWrapper h1 {
+    font-size: clamp(24px,3vw,40px);
+    font-weight: 500;
+}
+.privacyContent {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px 7vw;
+    gap: 40px;
+    line-height: 1.5;
+}
+.policies {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.policies h2 {
+    font-weight: 500;
+}
+.policies ul {
+    padding-left: 40px;
+    list-style: square;
+}
+
+@media screen and (max-width:600px) {
+    .privacyContent {
+        padding: 20px 0;
+        gap: 30px;
+    }
+    .privacyContent p {
+        font-size: 14px;
+    }
+    .policies ul li {
+        font-size: 14px;
+    }
+    .policies h2 {
+        font-size: 20px;
+    }
+}
