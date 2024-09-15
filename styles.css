@@ -107,13 +107,12 @@ h1, h2, h3{
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 3vw;
+  padding: 72px 3vw 3vw 3vw;
 }
 .slideshow-container {
   width: 100%;
   height: 100%;
   position: relative;
-  margin-top: 80px;
   background: #fff;
   border: 1px solid #ccc;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -223,7 +222,7 @@ h1, h2, h3{
 .videoInner {
   position: relative;
   width: 58%;
-  height: 70%;
+  height: max-content;
 }
 /* collab section  */
 .colab {
@@ -728,6 +727,9 @@ h1, h2, h3{
 }
 
 @media screen and (max-width: 768px) {
+  #closeButton {
+    padding: 1px 5px;
+  }
   .button {
     width: 40px;
     height: 40px;
@@ -779,12 +781,21 @@ h1, h2, h3{
     padding: 7px 10px;
     font-size: 12px;
   }
-  .slideshow-container {
-    margin-top: 112px;
-  }
   .prev,
   .next {
     top: 45%;
     padding: 10px;
   }
+}
+@media screen and (max-width: 500px) {
+  .hero {
+      height: 45vh;
+  }
+  .prev, .next {
+    top: 50%;
+    padding: 8px;
+}
+.videoInner {
+  width: 80%;
+}
 }
