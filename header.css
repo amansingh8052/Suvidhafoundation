@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    height: max-content;
+    height: 70px;
     background-color: var(--color);
     display: flex;
     align-items: center;
