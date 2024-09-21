@@ -1,0 +1,142 @@
+
+<style>
+    /* Loader styles */
+
+.spinner {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+}
+
+.item {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.item img {
+    width: 80%;
+    height: 80%;
+}
+.item-1 {
+  background-color: #f4e4e6;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  animation: item-1_move 3s cubic-bezier(.6,.01,.4,1) infinite;
+}
+
+.item-2 {
+  background-color: rgb(244, 238, 255);
+  top: 0;
+  right: 0;
+  animation: item-2_move 3s cubic-bezier(.6,.01,.4,1) infinite;
+}
+
+.item-3 {
+  background-color: rgb(230, 243, 255);
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  animation: item-3_move 3s cubic-bezier(.6,.01,.4,1) infinite;
+}
+
+.item-4 {
+  background-color: rgb(252, 248, 239);
+  bottom: 0;
+  left: 0;
+  animation: item-4_move 3s cubic-bezier(.6,.01,.4,1) infinite;
+}
+
+@keyframes item-1_move {
+  0%, 100% {
+    transform: translate(0, 0)
+  }
+
+  25% {
+    transform: translate(0, 50px)
+  }
+
+  50% {
+    transform: translate(50px, 50px)
+  }
+
+  75% {
+    transform: translate(50px, 0)
+  }
+}
+
+@keyframes item-2_move {
+  0%, 100% {
+    transform: translate(0, 0)
+  }
+
+  25% {
+    transform: translate(-50px, 0)
+  }
+
+  50% {
+    transform: translate(-50px, 50px)
+  }
+
+  75% {
+    transform: translate(0, 50px)
+  }
+}
+
+@keyframes item-3_move {
+  0%, 100% {
+    transform: translate(0, 0)
+  }
+
+  25% {
+    transform: translate(0, -50px)
+  }
+
+  50% {
+    transform: translate(-50px, -50px)
+  }
+
+  75% {
+    transform: translate(-50px, 0)
+  }
+}
+
+@keyframes item-4_move {
+  0%, 100% {
+    transform: translate(0, 0)
+  }
+
+  25% {
+    transform: translate(50px, 0)
+  }
+
+  50% {
+    transform: translate(50px, -50px)
+  }
+
+  75% {
+    transform: translate(0, -50px)
+  }
+}
+
+</style>
+<div id="loader">
+    <div class="spinner">
+        <div class="item item-1"><img src="icons/food.png" alt=""></div>
+        <div class="item item-2"><img src="icons/awareness.png" alt=""></div>
+        <div class="item item-3"><img src="icons/holding-plant.png" alt=""></div>
+        <div class="item item-4"><img src="icons/internship.png" alt=""></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
