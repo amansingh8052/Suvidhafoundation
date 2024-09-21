@@ -157,29 +157,3 @@ var swiper = new Swiper(".review-slide-content", {
   },
 });
 
-// Function to load the loader HTML and CSS dynamically
-function loadLoader() {
-  // Load the loader HTML
-  fetch('loader.html')
-    .then((response) => response.text())
-    .then((data) => {
-      document.body.insertAdjacentHTML('afterbegin', data);
-
-      // Load the loader CSS
-      const link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.href = 'loader.css';
-      document.head.appendChild(link);
-    });
-
-  // Hide the loader once the page is fully loaded
-  window.onload = function () {
-    const loader = document.getElementById('loader');
-    if (loader) {
-      loader.style.display = 'none';
-    }
-  };
-}
-
-// Call the loadLoader function
-loadLoader();
