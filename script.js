@@ -11,7 +11,6 @@ function loadComponent(id, url) {
 document.addEventListener("DOMContentLoaded", function () {
   loadComponent("header", "header.html");
   loadComponent("footer", "footer.html");
-  loadComponent("reviews", "testimonial.html");
 });
 
 function toggleDropdown() {
